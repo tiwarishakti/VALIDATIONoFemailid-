@@ -1,5 +1,4 @@
-package emailidsearch;
-
+package emailiDsearch;
 
 import java.util.ArrayList;
 
@@ -16,16 +15,15 @@ public class emailidsearch {
 		ID.add("vwx@yhw.com");
 		ID.add("yza@yhw.com");
 		ID.add("bcd@yhw.com");
-		String search;
-		search = "vwx@yhw.com";
-
+		String search= "yta@yhw.com";
+		int c=0;
 		for (int i = 0; i < ID.size(); i++) {
-			System.out.println(ID.get(i));
+			c+=1;
 			if (search == ID.get(i)) {
-				System.out.println("\n");
 				System.out.println("Email id found.");
 				break;
 			}
+			if (c==ID.size()) {System.out.println("Email id did'nt found.");}
 		}
 	}
 }
